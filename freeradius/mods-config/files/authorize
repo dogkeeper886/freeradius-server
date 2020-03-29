@@ -204,3 +204,5 @@ DEFAULT	Hint == "SLIP"
 # See the example user "bob" above.                     #
 #########################################################
 
+bob    Cleartext-Password := "hello"
+"John Doe"     Cleartext-Password := "hello"

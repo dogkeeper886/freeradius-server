@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: freeradius-server-deployment
+  labels:
+    app: freeradius-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: freeradius-server
+  template:
+    metadata:
+      labels:
+        app: freeradius-server
+    spec:
+      containers:
+      - name: freeradius-server
+        image: freeradius/freeradius-server
+        ports:
+        - containerPort: 1812
+          protocol: UDP
+          name: auth
+        - containerPort: 1813
+          protocol: UDP
+          name: acct
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/freeradius/mods-config/files/authorize
+          subPath: authorize
+        - name: config-volume
+          mountPath: /etc/freeradius/clients.conf
+          subPath: clients.conf
+      volumes:
+      - name: config-volume
+        configMap:
+          name: freeradius-server-config

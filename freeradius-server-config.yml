@@ -20,6 +20,8 @@ data:
 
     user03    Cleartext-Password := "user03"
            Reply-Message := "Hello, %{User-Name}"
+    04-52-F3-87-F4-11	 Cleartext-Password := "04-52-F3-87-F4-11"
+           Reply-Message := "Hello, %{User-Name}"
   clients.conf: |
     client all-network {
            ipaddr          = 0.0.0.0/0

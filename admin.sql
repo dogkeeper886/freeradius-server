@@ -9,7 +9,7 @@ GRANT SELECT ON radius.* TO 'radius'@'localhost';
 GRANT ALL on radius.radacct TO 'radius'@'localhost';
 GRANT ALL on radius.radpostauth TO 'radius'@'localhost';
 
-USE database radius;
+USE radius;
 
 CREATE TABLE IF NOT EXISTS radacct (
   radacctid bigint(21) NOT NULL auto_increment,

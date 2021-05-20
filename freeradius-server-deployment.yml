@@ -25,10 +25,10 @@ spec:
           protocol: UDP
           name: acct
         volumeMounts:
-        - name: config-volume
+        - name: secret-volume
           mountPath: /etc/freeradius/mods-config/files/authorize
           subPath: authorize
-        - name: config-volume
+        - name: secret-volume
           mountPath: /etc/freeradius/clients.conf
           subPath: clients.conf
         - name: config-volume
@@ -44,3 +44,6 @@ spec:
       - name: config-volume
         configMap:
           name: freeradius-server-config
+      - name: secret-volume
+        secret:
+          secretName: freeradius-server-secret

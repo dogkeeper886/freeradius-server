@@ -1,0 +1,2 @@
+V	210719192006Z		01	unknown	/C=TW/ST=Ruckus/O=QA/CN=Example Server Certificate/emailAddress=admin@wifi.alto
+V	210719192006Z		02	unknown	/C=TW/ST=Ruckus/O=QA/CN=user@wifi.alto/emailAddress=user@wifi.alto

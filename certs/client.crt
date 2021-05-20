@@ -1,0 +1,79 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=TW, ST=Ruckus, L=TDC, O=QA/emailAddress=admin@wifi.alto, CN=TDC alto Wi-Fi QA
+        Validity
+            Not Before: May 20 19:20:06 2021 GMT
+            Not After : Jul 19 19:20:06 2021 GMT
+        Subject: C=TW, ST=Ruckus, O=QA, CN=user@wifi.alto/emailAddress=user@wifi.alto
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:c7:82:25:4d:0b:5d:13:dd:24:c3:89:b7:34:3c:
+                    65:6c:73:6e:90:ba:f6:f8:58:d7:24:d5:02:ff:79:
+                    99:71:5d:e8:e7:ec:4b:94:68:05:2e:3f:42:a3:3f:
+                    e1:a6:07:3d:1e:b6:1f:28:07:0b:8a:0e:94:56:67:
+                    14:98:44:5f:a1:d5:95:54:23:49:fe:6a:be:ca:23:
+                    44:59:d7:e7:cb:9c:5f:71:ae:b8:71:04:8e:38:85:
+                    18:2c:d2:b7:30:bf:2c:8e:2b:01:70:cf:74:e8:75:
+                    97:13:96:1b:e6:61:1c:b0:79:ef:65:fb:e2:3b:b9:
+                    75:60:c1:be:ad:ba:39:5e:fe:6f:58:6a:c7:a3:87:
+                    11:40:d4:04:99:1b:fa:fc:97:56:f3:a4:a6:5c:50:
+                    52:59:10:57:60:df:da:72:af:74:c7:72:dd:e2:db:
+                    3f:39:3f:4a:b5:75:0c:6a:3a:4a:cd:65:c5:d9:1d:
+                    63:2e:d9:24:98:8f:ed:ed:93:84:05:ee:be:e7:34:
+                    23:30:d9:57:3a:34:57:31:d9:81:33:34:c2:88:26:
+                    2f:fe:11:66:f2:cd:ab:9a:31:9b:6c:2e:22:81:97:
+                    fd:eb:4d:dc:29:8f:1b:ae:94:a8:1b:3b:d6:23:d9:
+                    37:4e:e0:1f:75:61:25:ba:2f:9b:e3:71:eb:ca:09:
+                    6a:33
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://www.example.com/example_ca.crl
+
+    Signature Algorithm: sha256WithRSAEncryption
+         1f:4c:64:78:0d:33:b4:4f:5f:49:e1:95:4e:76:e8:e6:07:d4:
+         17:a1:2b:b1:01:8a:3b:b6:2f:3f:56:40:a8:49:c6:15:ce:fc:
+         a5:da:1d:1a:4e:3a:72:b9:13:01:83:26:c3:56:48:b7:d7:f6:
+         29:4a:61:fa:71:77:03:84:54:b5:00:c5:0f:86:a6:f2:5d:2e:
+         9c:c5:8b:a2:4a:a5:86:ae:5b:9a:bd:66:d0:17:7b:ff:4c:44:
+         41:66:91:86:23:75:98:29:95:be:93:0f:09:4c:08:28:f9:f7:
+         44:bb:75:c6:5d:e1:ae:db:58:d0:21:3d:57:39:67:49:bf:d1:
+         a2:5d:a8:0d:47:6a:cb:58:cd:f3:00:56:a1:83:a0:b7:a0:80:
+         eb:b0:9c:9a:c0:72:7b:52:a3:24:89:66:9b:4f:57:35:0b:09:
+         ea:a2:1a:df:f3:cd:cc:d5:b0:ad:d3:16:3a:c5:65:ff:85:59:
+         e5:00:fd:72:b5:18:75:9b:97:86:da:90:55:b8:66:17:50:c8:
+         83:12:7b:fb:40:c7:63:13:b0:e5:8b:d0:87:5a:b8:72:10:c1:
+         f5:da:f6:68:ba:1e:63:7e:88:10:8b:a4:47:f8:5f:2e:cf:3d:
+         c9:2e:07:0d:83:0c:46:6d:1f:7f:11:70:aa:da:65:7e:50:96:
+         b1:9b:b2:9e
+-----BEGIN CERTIFICATE-----
+MIIDojCCAoqgAwIBAgIBAjANBgkqhkiG9w0BAQsFADB1MQswCQYDVQQGEwJUVzEP
+MA0GA1UECAwGUnVja3VzMQwwCgYDVQQHDANUREMxCzAJBgNVBAoMAlFBMR4wHAYJ
+KoZIhvcNAQkBFg9hZG1pbkB3aWZpLmFsdG8xGjAYBgNVBAMMEVREQyBhbHRvIFdp
+LUZpIFFBMB4XDTIxMDUyMDE5MjAwNloXDTIxMDcxOTE5MjAwNlowYzELMAkGA1UE
+BhMCVFcxDzANBgNVBAgMBlJ1Y2t1czELMAkGA1UECgwCUUExFzAVBgNVBAMMDnVz
+ZXJAd2lmaS5hbHRvMR0wGwYJKoZIhvcNAQkBFg51c2VyQHdpZmkuYWx0bzCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMeCJU0LXRPdJMOJtzQ8ZWxzbpC6
+9vhY1yTVAv95mXFd6OfsS5RoBS4/QqM/4aYHPR62HygHC4oOlFZnFJhEX6HVlVQj
+Sf5qvsojRFnX58ucX3GuuHEEjjiFGCzStzC/LI4rAXDPdOh1lxOWG+ZhHLB572X7
+4ju5dWDBvq26OV7+b1hqx6OHEUDUBJkb+vyXVvOkplxQUlkQV2Df2nKvdMdy3eLb
+Pzk/SrV1DGo6Ss1lxdkdYy7ZJJiP7e2ThAXuvuc0IzDZVzo0VzHZgTM0wogmL/4R
+ZvLNq5oxm2wuIoGX/etN3CmPG66UqBs71iPZN07gH3VhJbovm+Nx68oJajMCAwEA
+AaNPME0wEwYDVR0lBAwwCgYIKwYBBQUHAwIwNgYDVR0fBC8wLTAroCmgJ4YlaHR0
+cDovL3d3dy5leGFtcGxlLmNvbS9leGFtcGxlX2NhLmNybDANBgkqhkiG9w0BAQsF
+AAOCAQEAH0xkeA0ztE9fSeGVTnbo5gfUF6ErsQGKO7YvP1ZAqEnGFc78pdodGk46
+crkTAYMmw1ZIt9f2KUph+nF3A4RUtQDFD4am8l0unMWLokqlhq5bmr1m0Bd7/0xE
+QWaRhiN1mCmVvpMPCUwIKPn3RLt1xl3hrttY0CE9VzlnSb/Rol2oDUdqy1jN8wBW
+oYOgt6CA67CcmsBye1KjJIlmm09XNQsJ6qIa3/PNzNWwrdMWOsVl/4VZ5QD9crUY
+dZuXhtqQVbhmF1DIgxJ7+0DHYxOw5YvQh1q4chDB9dr2aLoeY36IEIukR/hfLs89
+yS4HDYMMRm0ffxFwqtplflCWsZuyng==
+-----END CERTIFICATE-----

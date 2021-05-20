@@ -79,46 +79,6 @@ data:
     }
 
     $INCLUDE sites-enabled/
-  server.pem: "Bag Attributes\n    localKeyID: FB 7C 4A 57 07 50 0D B7 A6 F1 4F F7
-    75 54 1D 12 35 B3 0E E2 \nsubject=C = FR, ST = Radius, O = Example Inc., CN =
-    Example Server Certificate, emailAddress = admin@example.org\n\nissuer=C = FR,
-    ST = Radius, L = Somewhere, O = Example Inc., emailAddress = admin@example.org,
-    CN = Example Certificate Authority\n\n-----BEGIN CERTIFICATE-----\nMIID9DCCAtygAwIBAgIBATANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMCRlIx\nDzANBgNVBAgMBlJhZGl1czESMBAGA1UEBwwJU29tZXdoZXJlMRUwEwYDVQQKDAxF\neGFtcGxlIEluYy4xIDAeBgkqhkiG9w0BCQEWEWFkbWluQGV4YW1wbGUub3JnMSYw\nJAYDVQQDDB1FeGFtcGxlIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMTA0MjIw\nODI1NThaFw0yMTA2MjEwODI1NThaMHwxCzAJBgNVBAYTAkZSMQ8wDQYDVQQIDAZS\nYWRpdXMxFTATBgNVBAoMDEV4YW1wbGUgSW5jLjEjMCEGA1UEAwwaRXhhbXBsZSBT\nZXJ2ZXIgQ2VydGlmaWNhdGUxIDAeBgkqhkiG9w0BCQEWEWFkbWluQGV4YW1wbGUu\nb3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzIipb+7cgjbJxh4R\n1J5/5KH8ITpuNHZu4ZHMtxXIVMdvCuACUlbBIh5Y8hRjS3zoSX36hEdvHcxT06eN\njb1dpw0HaMvHGNgNI7te1UwKDMNzj3jp7czaQT0uD55r5VFwmiqVnNyVpWFKQ7VZ\nlM/OrvTBuHkUp1kf3N/TyeE5Ko+yMXZYlqTbKJaDPKCpnRcawnEoBrbjTXlqfHB4\npnU9JcUOdukK+J+KA1zho9Ve3zMUk/a8dSJ6VohyMT2k57AOhT0PemzeSBnY+znk\nKjMYHgtUCgTtbOBy5MZ1Ji4nAXRG/DZ3X6Wrenlbny0tnkAOes2ZLQVcS8EDCXI1\nvTg/AwIDAQABo2kwZzATBgNVHSUEDDAKBggrBgEFBQcDATA2BgNVHR8ELzAtMCug\nKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUuY29tL2V4YW1wbGVfY2EuY3JsMBgGA1Ud\nIAQRMA8wDQYLKwYBBAGCvmgBAwIwDQYJKoZIhvcNAQELBQADggEBAJ/V3hr6RrGI\nc6OCuDrtm+WAPKM302WdionfPUtd/7gRXQRpWDk+HmkYXbAHmpTPYDARTBSUpbY9\nUZzDYI5MvL928tjq+IZLXjuBPX6L7NPZF+VNhwuM7HcNM1Qtkyj37QdLMpg26ydB\niwap9vCx5csrDoDGK1ij5biePA5vmuhZU3x5nFPO8LxyDEw131TZAdvOOTv8s2jM\nNFkUhj79Zwu5oFNvR5iUt6d7Gd9UombDfqW5Nl1pnTumIAwtk3Tw+u4idjHuH3a7\nZstslMnUyqoldsBBFtiNavVVRgR1vmxJCR06Rh5/qQu136MrWlxJhQx7iPMk6uSU\nFlLEP3rJK0A=\n-----END
-    CERTIFICATE-----\nBag Attributes\n    localKeyID: FB 7C 4A 57 07 50 0D B7 A6 F1
-    4F F7 75 54 1D 12 35 B3 0E E2 \nKey Attributes: <No Attributes>\n-----BEGIN ENCRYPTED
-    PRIVATE KEY-----\nMIIFHDBOBgkqhkiG9w0BBQ0wQTApBgkqhkiG9w0BBQwwHAQIJ6SMZgfLwk8CAggA\nMAwGCCqGSIb3DQIJBQAwFAYIKoZIhvcNAwcECAZfoWzWkD2jBIIEyJQjxR4Mj34d\nqrvcEg7I2tdExX0eZWYlriEDgAk1su+XHpHxY8GBuTgNPwfvs6udxaFryHN16T61\ndNzrU53+GsDNhqTkUaIm5wUQR+emPWfchFrPm/5mSW0hQTyBQRD+mFw7KBQ/p/XZ\nn2ovY83cJuOWELC/tcSnprdc0TJctmHw6OLKLlKP412HqVLLhxxSPIZcG6c34ftG\nqGsQdmn2gg7NSqUaFimRm/H9xPRwBhLDia/rX8WgRQ4W4baADfH3JWTINutays6F\n1z34U+4/FLTyY9NXyCC8l83tjmgEd9o/L1soItjkD1EWTe4KFYOfrA5dhpZZxxCu\nP2oOWAdWUXsnYophHJ8MY7nEbzQo/8hx6lxN2Q5V5kgEY2KrB4t6O6h3pJ9ZW28m\nF/3TOqijspflZL2OWojIYSSvFoITHF0JebfX8Ve6pGtVCyrPV4Wg7KKCTx2SrI7D\nGsCaPhJxRfYLOjonHqSzm1rNyJLS8EipIcBdp6r3CFpmqqnpMR05wuKe7Q568G6j\n9bo/Lit28VH3A+cJ4dJeWV0hwLZ/2uKI9zz3kIUUwTLTSKHQv0rIWzp7ZrR8dRAe\nJvrFVugOvXmTw3rsBAv51mq0RyCDiVMT1nSOWJfx1k4EdnjuDa77FQHGGejRiOsT\nMaramc8BmtIQXQ7BiU6cADPmVKbWbpUw0Wr50osD7UqpP+RjCwxcFP1v5iLus3XV\nJqox/VvoDfZ5m5km7t8zG9Pd4nwcCJNvwhiNY20GVV43EhBwtgqFsZeWI1awep3r\nWHPp2nWidT0IENngDtqv7Rzexb93DoZ6UlTEDOxz+L+b1grQZ1SKN21AurYjqApT\nrXYY9SdsoiA8M6cd3QxIJPZbXcXzrphIP6t3MNvIMPAMomNCO3PtI9mgHIaYyOTT\noIAX9GLAk4tNVntmaYyZWnLS391SuijkjhW4VJfJ0FtnVLgyGUpScRulICBV5fUv\nDSvN+hwk4fOzUCe7uAgktOMKb0MTeafUTyzVthMr4KJDYhOd8C2zRtsQG+r1mcLX\ngwsfsIGLwcXBu6ulUW0JbelSttgHqCSXqWwHkOg/vpo64NopnxRv8ss0YYA8wD7g\n8vS+8YJR6Fn+FrCEkMbY4mx4XHYbNoC35zsAlHJ8GyJY+NR3oLMYrqVKV0JB2blv\npHXB0nkoIURL99PwblrKZWVTERgKN8NHrc1NrbMzYFNcz7UguVAHpYOPb0R89mfV\nIJEm9/zMsh0mrRypRxrBpCbn3qOTTdGjT64Tazpxo4sahG26mDzoYvKB7x2EiwWG\nR5dwek5aB7Z2hDo53D9ywSRVV51LUGc0w5Wglpoai9MxMl2BcFeMqPcUEYKjmBPO\na0AoFI/kUr452AnRqCHXyJ1g6ICRjE/Hca/jyULEqHrNtu51+2mq5WVO6LAYJlXJ\nSZ5f5ccYi4oahtStHLgUZR4Xre0PvJVQYdqwXeIBVDnMpYHdWkg0olyHdyTbct7p\nc/iyN3Zx0ch4Ef6/mBIwuvN+LjpWYDkRNNyj2SraWtS1ONvDochGUSSjDna70X3j\nXTJuep7LChVa3JvPcKnACgtsxUQRmV10o4sdwfHDpWLKRm/cvvNtYzDdX8iJ+G48\nUC+ghWaJ8Gibit1CaZ2Ccg==\n-----END
-    ENCRYPTED PRIVATE KEY-----\n"
-  server.crt: "Certificate:\n    Data:\n        Version: 3 (0x2)\n        Serial Number:
-    1 (0x1)\n        Signature Algorithm: sha256WithRSAEncryption\n        Issuer:
-    C=FR, ST=Radius, L=Somewhere, O=Example Inc./emailAddress=admin@example.org, CN=Example
-    Certificate Authority\n        Validity\n            Not Before: Apr 22 08:25:58
-    2021 GMT\n            Not After : Jun 21 08:25:58 2021 GMT\n        Subject: C=FR,
-    ST=Radius, O=Example Inc., CN=Example Server Certificate/emailAddress=admin@example.org\n
-    \       Subject Public Key Info:\n            Public Key Algorithm: rsaEncryption\n
-    \               RSA Public-Key: (2048 bit)\n                Modulus:\n                    00:cc:88:a9:6f:ee:dc:82:36:c9:c6:1e:11:d4:9e:\n
-    \                   7f:e4:a1:fc:21:3a:6e:34:76:6e:e1:91:cc:b7:15:\n                    c8:54:c7:6f:0a:e0:02:52:56:c1:22:1e:58:f2:14:\n
-    \                   63:4b:7c:e8:49:7d:fa:84:47:6f:1d:cc:53:d3:a7:\n                    8d:8d:bd:5d:a7:0d:07:68:cb:c7:18:d8:0d:23:bb:\n
-    \                   5e:d5:4c:0a:0c:c3:73:8f:78:e9:ed:cc:da:41:3d:\n                    2e:0f:9e:6b:e5:51:70:9a:2a:95:9c:dc:95:a5:61:\n
-    \                   4a:43:b5:59:94:cf:ce:ae:f4:c1:b8:79:14:a7:59:\n                    1f:dc:df:d3:c9:e1:39:2a:8f:b2:31:76:58:96:a4:\n
-    \                   db:28:96:83:3c:a0:a9:9d:17:1a:c2:71:28:06:b6:\n                    e3:4d:79:6a:7c:70:78:a6:75:3d:25:c5:0e:76:e9:\n
-    \                   0a:f8:9f:8a:03:5c:e1:a3:d5:5e:df:33:14:93:f6:\n                    bc:75:22:7a:56:88:72:31:3d:a4:e7:b0:0e:85:3d:\n
-    \                   0f:7a:6c:de:48:19:d8:fb:39:e4:2a:33:18:1e:0b:\n                    54:0a:04:ed:6c:e0:72:e4:c6:75:26:2e:27:01:74:\n
-    \                   46:fc:36:77:5f:a5:ab:7a:79:5b:9f:2d:2d:9e:40:\n                    0e:7a:cd:99:2d:05:5c:4b:c1:03:09:72:35:bd:38:\n
-    \                   3f:03\n                Exponent: 65537 (0x10001)\n        X509v3
-    extensions:\n            X509v3 Extended Key Usage: \n                TLS Web
-    Server Authentication\n            X509v3 CRL Distribution Points: \n\n                Full
-    Name:\n                  URI:http://www.example.com/example_ca.crl\n\n            X509v3
-    Certificate Policies: \n                Policy: 1.3.6.1.4.1.40808.1.3.2\n\n    Signature
-    Algorithm: sha256WithRSAEncryption\n         9f:d5:de:1a:fa:46:b1:88:73:a3:82:b8:3a:ed:9b:e5:80:3c:\n
-    \        a3:37:d3:65:9d:8a:89:df:3d:4b:5d:ff:b8:11:5d:04:69:58:\n         39:3e:1e:69:18:5d:b0:07:9a:94:cf:60:30:11:4c:14:94:a5:\n
-    \        b6:3d:51:9c:c3:60:8e:4c:bc:bf:76:f2:d8:ea:f8:86:4b:5e:\n         3b:81:3d:7e:8b:ec:d3:d9:17:e5:4d:87:0b:8c:ec:77:0d:33:\n
-    \        54:2d:93:28:f7:ed:07:4b:32:98:36:eb:27:41:8b:06:a9:f6:\n         f0:b1:e5:cb:2b:0e:80:c6:2b:58:a3:e5:b8:9e:3c:0e:6f:9a:\n
-    \        e8:59:53:7c:79:9c:53:ce:f0:bc:72:0c:4c:35:df:54:d9:01:\n         db:ce:39:3b:fc:b3:68:cc:34:59:14:86:3e:fd:67:0b:b9:a0:\n
-    \        53:6f:47:98:94:b7:a7:7b:19:df:54:a2:66:c3:7e:a5:b9:36:\n         5d:69:9d:3b:a6:20:0c:2d:93:74:f0:fa:ee:22:76:31:ee:1f:\n
-    \        76:bb:66:cb:6c:94:c9:d4:ca:aa:25:76:c0:41:16:d8:8d:6a:\n         f5:55:46:04:75:be:6c:49:09:1d:3a:46:1e:7f:a9:0b:b5:df:\n
-    \        a3:2b:5a:5c:49:85:0c:7b:88:f3:24:ea:e4:94:16:52:c4:3f:\n         7a:c9:2b:40\n-----BEGIN
-    CERTIFICATE-----\nMIID9DCCAtygAwIBAgIBATANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMCRlIx\nDzANBgNVBAgMBlJhZGl1czESMBAGA1UEBwwJU29tZXdoZXJlMRUwEwYDVQQKDAxF\neGFtcGxlIEluYy4xIDAeBgkqhkiG9w0BCQEWEWFkbWluQGV4YW1wbGUub3JnMSYw\nJAYDVQQDDB1FeGFtcGxlIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMTA0MjIw\nODI1NThaFw0yMTA2MjEwODI1NThaMHwxCzAJBgNVBAYTAkZSMQ8wDQYDVQQIDAZS\nYWRpdXMxFTATBgNVBAoMDEV4YW1wbGUgSW5jLjEjMCEGA1UEAwwaRXhhbXBsZSBT\nZXJ2ZXIgQ2VydGlmaWNhdGUxIDAeBgkqhkiG9w0BCQEWEWFkbWluQGV4YW1wbGUu\nb3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzIipb+7cgjbJxh4R\n1J5/5KH8ITpuNHZu4ZHMtxXIVMdvCuACUlbBIh5Y8hRjS3zoSX36hEdvHcxT06eN\njb1dpw0HaMvHGNgNI7te1UwKDMNzj3jp7czaQT0uD55r5VFwmiqVnNyVpWFKQ7VZ\nlM/OrvTBuHkUp1kf3N/TyeE5Ko+yMXZYlqTbKJaDPKCpnRcawnEoBrbjTXlqfHB4\npnU9JcUOdukK+J+KA1zho9Ve3zMUk/a8dSJ6VohyMT2k57AOhT0PemzeSBnY+znk\nKjMYHgtUCgTtbOBy5MZ1Ji4nAXRG/DZ3X6Wrenlbny0tnkAOes2ZLQVcS8EDCXI1\nvTg/AwIDAQABo2kwZzATBgNVHSUEDDAKBggrBgEFBQcDATA2BgNVHR8ELzAtMCug\nKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUuY29tL2V4YW1wbGVfY2EuY3JsMBgGA1Ud\nIAQRMA8wDQYLKwYBBAGCvmgBAwIwDQYJKoZIhvcNAQELBQADggEBAJ/V3hr6RrGI\nc6OCuDrtm+WAPKM302WdionfPUtd/7gRXQRpWDk+HmkYXbAHmpTPYDARTBSUpbY9\nUZzDYI5MvL928tjq+IZLXjuBPX6L7NPZF+VNhwuM7HcNM1Qtkyj37QdLMpg26ydB\niwap9vCx5csrDoDGK1ij5biePA5vmuhZU3x5nFPO8LxyDEw131TZAdvOOTv8s2jM\nNFkUhj79Zwu5oFNvR5iUt6d7Gd9UombDfqW5Nl1pnTumIAwtk3Tw+u4idjHuH3a7\nZstslMnUyqoldsBBFtiNavVVRgR1vmxJCR06Rh5/qQu136MrWlxJhQx7iPMk6uSU\nFlLEP3rJK0A=\n-----END
-    CERTIFICATE-----\n"
 kind: ConfigMap
 metadata:
   name: freeradius-server-config

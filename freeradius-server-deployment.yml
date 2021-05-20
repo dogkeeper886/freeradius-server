@@ -34,10 +34,10 @@ spec:
         - name: config-volume
           mountPath: /etc/freeradius/radiusd.conf
           subPath: radiusd.conf
-        - name: config-volume
+        - name: secret-volume
           mountPath: /etc/freeradius/certs/server.pem
           subPath: server.pem
-        - name: config-volume
+        - name: secret-volume
           mountPath: /etc/freeradius/certs/server.crt
           subPath: server.crt
       volumes:

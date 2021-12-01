@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: freeradius-server-deployment
+  name: freeradius-server
   labels:
     app: freeradius-server
 spec:

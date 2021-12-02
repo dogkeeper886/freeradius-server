@@ -1,16 +1,3 @@
-# -*- text -*-
-##
-##  eap.conf -- Configuration for EAP types (PEAP, TTLS, etc.)
-##
-##	$Id: 61be516b1a686e7a1c83e61f9260960a5f01730d $
-
-#######################################################################
-#
-#  Whatever you do, do NOT set 'Auth-Type := EAP'.  The server
-#  is smart enough to figure this out on its own.  The most
-#  common side effect of setting 'Auth-Type := EAP' is that the
-#  users then cannot use ANY other authentication method.
-#
 eap {
 	#  Invoke the default supported EAP type when
 	#  EAP-Identity response is received.
@@ -475,7 +462,7 @@ eap {
 		#  Other versions of EAP (PEAP, TTLS, FAST) DO NOT
 		#  SUPPORT TLS 1.3.
 		#
-		tls_min_version = "1.2"
+		tls_min_version = "1.0"
 		tls_max_version = "1.2"
 
 		#  Elliptical cryptography configuration

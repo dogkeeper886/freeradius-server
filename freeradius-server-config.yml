@@ -102,7 +102,7 @@ data:
                     ca_file = ${cadir}/ca.pem
                     dh_file = ${certdir}/dh
                     ca_path = ${cadir}
-                    cipher_list = "DEFAULT"
+                    cipher_list = "DEFAULT@SECLEVEL=1"
                     cipher_server_preference = no
                     tls_min_version = "1.0"
                     tls_max_version = "1.2"

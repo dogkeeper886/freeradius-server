@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: freeradius-server
+  labels:
+    app: freeradius-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: freeradius-server
+  template:
+    metadata:
+      labels:
+        app: freeradius-server
+    spec:
+      containers:
+      - name: freeradius-server
+        image: freeradius/freeradius-server
+        ports:
+        - containerPort: 1812
+          protocol: UDP
+          name: auth
+        - containerPort: 1813
+          protocol: UDP
+          name: acct
+        volumeMounts:
+        - mountPath: /etc/freeradius
+          name: freeradius-csi-volume
+      securityContext:
+        fsGroup: 1000
+      volumes:
+      - name: freeradius-csi-volume
+        persistentVolumeClaim:
+          claimName: freeradius-csi-pvc
+

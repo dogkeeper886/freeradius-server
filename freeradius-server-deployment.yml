@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: freeradius-server
-        image: freeradius/freeradius-server
+        image: freeradius/freeradius-server:3.2.1
         ports:
         - containerPort: 1812
           protocol: UDP
@@ -34,15 +34,6 @@ spec:
         - name: config-volume
           mountPath: /etc/freeradius/radiusd.conf
           subPath: radiusd.conf
-        - name: config-volume
-          mountPath: /etc/freeradius/mods-available/eap
-          subPath: eap
-        - name: secret-volume
-          mountPath: /etc/freeradius/certs/server.pem
-          subPath: server.pem
-        - name: secret-volume
-          mountPath: /etc/freeradius/certs/server.crt
-          subPath: server.crt
       volumes:
       - name: config-volume
         configMap:

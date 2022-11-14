@@ -34,6 +34,15 @@ spec:
         - name: config-volume
           mountPath: /etc/freeradius/radiusd.conf
           subPath: radiusd.conf
+        resources:
+          limits:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512M          
       volumes:
       - name: config-volume
         configMap:

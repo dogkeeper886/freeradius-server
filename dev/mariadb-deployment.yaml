@@ -25,6 +25,7 @@ spec:
             ephemeral-storage: 1Gi
             memory: 512Mi       
         image: mariadb
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3306
           protocol: TCP
@@ -50,6 +51,7 @@ spec:
             ephemeral-storage: 1Gi
             memory: 512Mi       
         image: adminer
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
           protocol: TCP

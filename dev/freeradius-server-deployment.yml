@@ -33,5 +33,25 @@ spec:
           requests:
             cpu: 250m
             ephemeral-storage: 1Gi
-            memory: 512M          
+            memory: 512M    
+        volumeMounts:
+        - name: config
+          mountPath: /etc/raddb/radiusd.conf
+          subPath: radiusd.conf
+        - name: config
+          mountPath: /etc/raddb/sites-available/default
+          subPath: default
+        - name: config
+          mountPath: /etc/raddb/sites-available/inner-tunnel
+          subPath: inner-tunnel
+        - name: config
+          mountPath: /etc/raddb/mods-available/sql
+          subPath: sql     
+        - name: config
+          mountPath: /etc/raddb/mods-enabled/sql
+          subPath: sql                                     
+      volumes:
+      - name: config
+        configMap:
+          name: freeradius-server                  
 

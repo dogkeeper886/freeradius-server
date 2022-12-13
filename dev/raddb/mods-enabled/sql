@@ -145,7 +145,7 @@ sql {
 	# Connection info:
 	#
 	server = "mariadb"
-	port = 3306
+	port = 30797
 	login = "radius"
 	password = "radpass"
 

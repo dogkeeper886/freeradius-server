@@ -12,13 +12,7 @@ spec:
     name: auth
   - port: 1813
     protocol: UDP
-    name: acct
-  - port: 8080
-    protocol: TCP
-    name: viewer
-  - port: 3306
-    protocol: TCP
-    name: mysql             
+    name: acct          
   selector:
     app: freeradius-server
   type: NodePort

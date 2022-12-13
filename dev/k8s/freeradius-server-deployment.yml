@@ -37,74 +37,29 @@ spec:
             ephemeral-storage: 1Gi
             memory: 512M    
         volumeMounts:
-        - name: freeradius-server-config
+        - name: config
           mountPath: /etc/raddb/radiusd.conf
           subPath: radiusd.conf
-        - name: freeradius-server-secret
+        - name: secret
           mountPath: /etc/raddb/clients.conf
           subPath: clients.conf          
-        - name: freeradius-server-config
+        - name: config
           mountPath: /etc/raddb/sites-available/default
           subPath: default
-        - name: freeradius-server-config
+        - name: config
           mountPath: /etc/raddb/sites-available/inner-tunnel
           subPath: inner-tunnel
-        - name: freeradius-server-config
+        - name: config
           mountPath: /etc/raddb/mods-available/sql
           subPath: sql     
-        - name: freeradius-server-config
+        - name: config
           mountPath: /etc/raddb/mods-enabled/sql
           subPath: sql                                     
-      - name: mariadb
-        resources:
-          limits:
-            cpu: 250m
-            ephemeral-storage: 1Gi
-            memory: 512Mi
-          requests:
-            cpu: 250m
-            ephemeral-storage: 1Gi
-            memory: 512Mi       
-        image: mariadb:10.9.4
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 3306
-          protocol: TCP
-          name: mysql
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mariadb
-              key: MARIADB_ROOT_PASSWORD
-        volumeMounts:
-        - name: mariadb-config
-          mountPath: /docker-entrypoint-initdb.d/0-start.sql
-          subPath: 0-start.sql               
-      - name: adminer
-        resources:
-          limits:
-            cpu: 250m
-            ephemeral-storage: 1Gi
-            memory: 512Mi
-          requests:
-            cpu: 250m
-            ephemeral-storage: 1Gi
-            memory: 512Mi       
-        image: adminer
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 8080
-          protocol: TCP
-          name: viewer        
       volumes:
-      - name: mariadb-config
-        configMap:
-          name: mariadb
-      - name: freeradius-server-config
+      - name: config
         configMap:
           name: freeradius-server       
-      - name: freeradius-server-secret
+      - name: secret
         secret:
           secretName: freeradius-server                     
 

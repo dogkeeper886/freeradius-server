@@ -38,6 +38,9 @@ spec:
         - name: config
           mountPath: /etc/raddb/radiusd.conf
           subPath: radiusd.conf
+        - name: secret
+          mountPath: /etc/raddb/clients.conf
+          subPath: clients.conf          
         - name: config
           mountPath: /etc/raddb/sites-available/default
           subPath: default
@@ -53,5 +56,8 @@ spec:
       volumes:
       - name: config
         configMap:
-          name: freeradius-server                  
+          name: freeradius-server       
+      - name: secret
+        secret:
+          secretName: freeradius-server                     
 

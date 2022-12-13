@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mariadb
+  labels:
+    app: mariadb
+spec:
+  selector:
+    matchLabels:
+      app: mariadb
+  template:
+    metadata:
+      labels:
+        app: mariadb
+    spec:
+      containers:
+      - name: mariadb
+        resources:
+          limits:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi       
+        image: mariadb
+        ports:
+        - containerPort: 3306
+          protocol: TCP
+          name: mysql
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mariadb
+              key: MARIADB_ROOT_PASSWORD
+      - name: adminer
+        resources:
+          limits:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 1Gi
+            memory: 512Mi       
+        image: adminer
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+          name: viewer
+        volumeMounts:
+        - name: config
+          mountPath: /docker-entrypoint-initdb.d/0-start.sql
+          subPath: 0-start.sql          
+      volumes:
+      - name: config
+        configMap:
+          name: mariadb

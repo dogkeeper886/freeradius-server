@@ -144,7 +144,7 @@ sql {
 
 	# Connection info:
 	#
-	server = "freeradius-server"
+	server = "mysql"
 	port = 3306
 	login = "radius"
 	password = "radpass"

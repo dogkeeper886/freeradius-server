@@ -15,7 +15,10 @@ spec:
     name: acct
   - port: 8080
     protocol: TCP
-    name: web         
+    name: viewer
+  - port: 3306
+    protocol: TCP
+    name: mysql             
   selector:
     app: freeradius-server
   type: NodePort

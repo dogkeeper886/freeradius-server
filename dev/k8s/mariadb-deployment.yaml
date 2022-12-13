@@ -38,8 +38,8 @@ spec:
               key: MARIADB_ROOT_PASSWORD
         volumeMounts:
         - name: config
-          mountPath: /docker-entrypoint-initdb.d/freeradius-server
-          subPath: freeradius-server                    
+          mountPath: /docker-entrypoint-initdb.d/freeradius-server.sql
+          subPath: freeradius-server.sql                    
       volumes:
       - name: config
         configMap:

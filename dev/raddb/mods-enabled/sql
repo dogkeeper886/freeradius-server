@@ -144,7 +144,7 @@ sql {
 
 	# Connection info:
 	#
-	server = "mysql"
+	server = "mariadb"
 	port = 3306
 	login = "radius"
 	password = "radpass"

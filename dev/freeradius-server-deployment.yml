@@ -14,6 +14,8 @@ spec:
       labels:
         app: freeradius-server
     spec:
+      securityContext:
+          fsGroup: 101    
       containers:
       - name: freeradius-server
         image: freeradius/freeradius-server:3.2.1

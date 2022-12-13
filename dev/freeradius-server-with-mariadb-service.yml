@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: freeradius-server
+  name: freeradius-server
+  namespace: default
+spec:
+  ports:
+  - port: 1812
+    protocol: UDP
+    name: auth
+  - port: 1813
+    protocol: UDP
+    name: acct
+  - port: 8080
+    protocol: TCP
+    name: web         
+  selector:
+    app: freeradius-server
+  type: NodePort

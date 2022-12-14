@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: freeradius-server
-  namespace: dev
+  namespace: default
   labels:
     app: freeradius-server
 spec:

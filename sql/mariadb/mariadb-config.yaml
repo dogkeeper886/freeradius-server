@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mariadb
-  namespace: dev
+  namespace: default
 data:
   freeradius-server.sql: |
     CREATE Database radius;

@@ -4,7 +4,7 @@ metadata:
   labels:
     app: freeradius-server
   name: freeradius-server
-  namespace: dev
+  namespace: default
 spec:
   ports:
   - port: 1812

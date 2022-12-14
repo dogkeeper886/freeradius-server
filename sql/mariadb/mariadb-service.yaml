@@ -4,7 +4,7 @@ metadata:
   labels:
     app: mariadb
   name: mariadb
-  namespace: dev
+  namespace: default
 spec:
   ports:
   - port: 3306

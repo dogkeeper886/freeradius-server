@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: freeradius-server
-  namespace: dev
+  namespace: default
 data:
   radiusd.conf: |
     # -*- text -*-

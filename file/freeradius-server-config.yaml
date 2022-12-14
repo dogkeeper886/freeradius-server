@@ -1,4 +1,8 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: freeradius-server-config
+  namespace: default
 data:
   radiusd.conf: |
     prefix = /usr
@@ -79,7 +83,3 @@ data:
     }
 
     $INCLUDE sites-enabled/
-kind: ConfigMap
-metadata:
-  name: freeradius-server-config
-  namespace: default

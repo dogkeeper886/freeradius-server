@@ -8,6 +8,10 @@ For store user information. Run sql file in docker-entrypoint-initdb.d folder to
 kubectl create configmap mariadb --from-file mariadb/freeradius-server.sql
 ### create mariadb secret file
 kubectl create secret generic mariadb --from-literal=MARIADB_ROOT_PASSWORD=YOUR_PASSWORD
+### create user and password
+USE radius;
+INSERT INTO `radcheck` (`username`, `attribute`, `op`, `value`)
+VALUES ('USER_NAME', 'NT-Password', ':=', 'NTLM_HASH_PASSWORD');
 ## freeradius-server
 Connect to database which specify in sql file.
 ### Create freeradius-server config file

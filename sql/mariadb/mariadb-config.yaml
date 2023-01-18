@@ -5,7 +5,7 @@ metadata:
   namespace: default
 data:
   freeradius-server.sql: |
-    CREATE Database radius;
+    CREATE Database IF NOT EXISTS radius;
     USE radius;
 
     CREATE TABLE IF NOT EXISTS radacct (

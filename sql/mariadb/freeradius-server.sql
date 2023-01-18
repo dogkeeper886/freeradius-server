@@ -1,5 +1,5 @@
-create Database radius;
-use radius;
+CREATE DATABASE IF NOT EXISTS radius;
+USE radius;
 
 CREATE TABLE IF NOT EXISTS radacct (
   radacctid bigint(21) NOT NULL auto_increment,

@@ -55,7 +55,13 @@ spec:
           subPath: sql     
         - name: config
           mountPath: /etc/raddb/mods-enabled/sql
-          subPath: sql                                     
+          subPath: sql
+        - mountPath: /etc/raddb/certs/server.pem
+          name: secret
+          subPath: server.pem
+        - mountPath: /etc/raddb/certs/ca.pem
+          name: secret
+          subPath: ca.pem                                     
       volumes:
       - name: config
         configMap:

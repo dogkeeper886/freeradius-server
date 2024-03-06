@@ -11,7 +11,7 @@ RUN chgrp -R freerad /etc/freeradius/clients.conf
 
 COPY freeradius/certs/ca.cnf /etc/freeradius/certs/ca.cnf
 COPY freeradius/certs/server.cnf /etc/freeradius/certs/server.cnf
-COPY freeradius/certs/clients.cnf /etc/freeradius/certs/clients.cnf
+COPY freeradius/certs/client.cnf /etc/freeradius/certs/client.cnf
 COPY freeradius/certs/inner-server.cnf /etc/freeradius/certs/inner-server.cnf
 
 RUN cd /etc/freeradius/certs && ./bootstrap

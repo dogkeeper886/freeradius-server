@@ -14,7 +14,7 @@ COPY freeradius/certs/server.cnf /etc/freeradius/certs/server.cnf
 COPY freeradius/certs/client.cnf /etc/freeradius/certs/client.cnf
 COPY freeradius/certs/inner-server.cnf /etc/freeradius/certs/inner-server.cnf
 
-RUN cd /etc/freeradius/certs && ./bootstrap
+RUN cd /etc/freeradius/certs && make destroycerts && ./bootstrap
 
 RUN chown -R freerad /etc/freeradius/certs
 RUN chgrp -R freerad /etc/freeradius/certs

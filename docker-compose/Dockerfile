@@ -18,3 +18,7 @@ RUN cd /etc/freeradius/certs && make destroycerts && ./bootstrap
 
 RUN chown -R freerad /etc/freeradius/certs
 RUN chgrp -R freerad /etc/freeradius/certs
+
+COPY freeradius/radiusd.conf /etc/freeradius/radiusd.conf
+RUN chown -R freerad /etc/freeradius/radiusd.conf
+RUN chgrp -R freerad /etc/freeradius/radiusd.conf

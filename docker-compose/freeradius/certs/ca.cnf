@@ -47,12 +47,12 @@ output_password		= whatever
 x509_extensions		= v3_ca
 
 [certificate_authority]
-countryName		= FR
-stateOrProvinceName	= Radius
-localityName		= Somewhere
-organizationName	= Example Inc.
-emailAddress		= admin@example.org
-commonName		= "Example Certificate Authority"
+countryName		= TW
+stateOrProvinceName	= Taiwan
+localityName		= Taipei
+organizationName	= TDC-QA
+emailAddress		= admin@tdcqa.local
+commonName		= tdcqa.local
 
 [v3_ca]
 subjectKeyIdentifier	= hash

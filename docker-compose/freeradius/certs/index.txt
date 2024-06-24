@@ -1,2 +1,0 @@
-V	340119033532Z		01	unknown	/C=TW/ST=Taiwan/O=TDC-QA/CN=freeradius-server.tdcqa.local/emailAddress=freeradius-server@tdcqa.local
-V	340119033533Z		02	unknown	/C=TW/ST=Taiwan/O=TDC-QA/CN=user@tdcqa.local/emailAddress=user@tdcqa.local

@@ -73,4 +73,4 @@ warnings.txt
 # rpm packages
 rpmbuild/
 freeradius-server.code-workspace
-.gitignore
+conf/Certificates/home_client 1_cert.p12

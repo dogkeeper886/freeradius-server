@@ -119,6 +119,30 @@ WORKDIR /
 COPY scripts/docker//etc/docker-entrypoint.sh.rpm docker-entrypoint.sh
 RUN chmod +x docker-entrypoint.sh
 
+# clients.conf
+COPY conf/clients.conf /etc/raddb/
+RUN chgrp radiusd /etc/raddb/clients.conf
+
+# eap
+COPY conf/eap /etc/raddb//etc/raddb/mods-available
+RUN chgrp radiusd /etc/raddb/mods-available/eap
+
+# root ca
+COPY conf/Certificates/home_root_ca_crt.pem /etc/raddb/certs/
+RUN chgrp radiusd /etc/raddb/certs/home_root_ca_crt.pem
+
+# intermedia ca
+COPY conf/Certificates/home_intermediate_ca_crt.pem /etc/raddb/certs/
+RUN chgrp radiusd /etc/raddb/certs/home_intermediate_ca_crt.pem
+
+# server cert
+COPY conf/Certificates/home_freeradius-server_crt.pem /etc/raddb/certs/
+RUN chgrp radiusd /etc/raddb/certs/home_freeradius-server_crt.pem
+
+# server private key
+COPY conf/Certificates/home_freeradius-server_prv.pem /etc/raddb/certs/
+RUN chgrp radiusd /etc/raddb/certs/home_freeradius-server_prv.pem
+
 EXPOSE 1812/udp 1813/udp
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["radiusd"]

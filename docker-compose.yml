@@ -7,3 +7,5 @@ services:
       - 1813:1813/udp
     build:
       context: "."
+    environment:
+    - TZ=Asia/Taipei

@@ -124,7 +124,7 @@ COPY conf/clients.conf /etc/raddb/
 RUN chgrp radiusd /etc/raddb/clients.conf
 
 # eap
-COPY conf/eap /etc/raddb//etc/raddb/mods-available
+COPY conf/eap /etc/raddb/mods-available
 RUN chgrp radiusd /etc/raddb/mods-available/eap
 
 # root ca
@@ -142,6 +142,10 @@ RUN chgrp radiusd /etc/raddb/certs/home_freeradius-server_crt.pem
 # server private key
 COPY conf/Certificates/home_freeradius-server_prv.pem /etc/raddb/certs/
 RUN chgrp radiusd /etc/raddb/certs/home_freeradius-server_prv.pem
+
+# server radiusd.conf key
+COPY conf/radiusd.conf /etc/raddb/
+RUN chgrp radiusd /etc/raddb/radiusd.conf
 
 EXPOSE 1812/udp 1813/udp
 ENTRYPOINT ["/docker-entrypoint.sh"]

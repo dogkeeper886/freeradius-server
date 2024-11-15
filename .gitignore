@@ -74,3 +74,5 @@ warnings.txt
 rpmbuild/
 freeradius-server.code-workspace
 conf/Certificates/home_client 1_cert.p12
+conf/Certificates/home_client_1_cert.p12
+conf/certs/

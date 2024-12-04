@@ -1,1 +1,1 @@
-scripts/docker/dists/rocky8/Dockerfile
+scripts/docker/dists/rocky9/Dockerfile

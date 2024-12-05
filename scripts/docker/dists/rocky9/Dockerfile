@@ -119,24 +119,6 @@ WORKDIR /
 COPY scripts/docker//etc/docker-entrypoint.sh.rpm docker-entrypoint.sh
 RUN chmod +x docker-entrypoint.sh
 
-#
-#  Copy certificate, key and conf
-#
-COPY conf/certs/rsa/ca.pem /etc/raddb/certs/rsa/
-RUN chgrp radiusd /etc/raddb/certs/rsa/ca.pem
-
-COPY conf/certs/rsa/server.pem /etc/raddb/certs/rsa/
-RUN chgrp radiusd /etc/raddb/certs/rsa/server.pem
-
-COPY conf/certs/rsa/server.key /etc/raddb/certs/rsa/
-RUN chgrp radiusd /etc/raddb/certs/rsa/server.key
-
-COPY conf/clients.conf /etc/raddb/
-RUN chgrp radiusd /etc/raddb/clients.conf
-
-COPY conf/authorize /etc/raddb/mods-config/files/
-RUN chgrp radiusd /etc/raddb/mods-config/files/authorize
-
 EXPOSE 1812/udp 1813/udp
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["radiusd"]

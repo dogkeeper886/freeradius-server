@@ -73,7 +73,10 @@ warnings.txt
 # rpm packages
 rpmbuild/
 freeradius-server.code-workspace
-conf/certs
-conf/authorize
-conf/clients.conf
+conf/desktop/certs
+conf/gke/certs
 
+
+conf/desktop/authorize
+conf/desktop/clients.conf
+conf/gke/clients.conf

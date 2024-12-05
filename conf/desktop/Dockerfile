@@ -17,3 +17,6 @@ RUN chgrp radiusd /etc/raddb/clients.conf
 
 COPY authorize /etc/raddb/mods-config/files/
 RUN chgrp radiusd /etc/raddb/mods-config/files/authorize
+
+COPY radiusd.conf /etc/raddb/
+RUN chgrp radiusd /etc/raddb/radiusd.conf

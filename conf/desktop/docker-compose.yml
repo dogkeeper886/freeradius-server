@@ -5,6 +5,6 @@ services:
     ports:
       - 1812:1812/udp
       - 1813:1813/udp
-    image: dogkeeper886/freeradius-server:0.02
+    image: dogkeeper886/freeradius-server:0.03
     environment:
     - TZ=Asia/Taipei

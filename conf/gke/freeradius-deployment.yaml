@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: freeradius-server
-          image: dogkeeper886/freeradius-server:1.02
+          image: dogkeeper886/freeradius-server:1.03
           ports:
             - name: auth
               containerPort: 1812

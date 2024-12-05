@@ -80,3 +80,4 @@ conf/gke/certs
 conf/desktop/authorize
 conf/desktop/clients.conf
 conf/gke/clients.conf
+conf/gke/authorize

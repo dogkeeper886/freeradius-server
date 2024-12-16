@@ -1,6 +1,0 @@
-PASSWORD_SERVER	= 'whatever'
-PASSWORD_INNER	= 'whatever'
-PASSWORD_CA	= 'whatever'
-PASSWORD_CLIENT	= 'whatever'
-USER_NAME	= 'client@tsengsyu.com'
-CA_DEFAULT_DAYS  = '1095'

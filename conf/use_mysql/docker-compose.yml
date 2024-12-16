@@ -1,0 +1,24 @@
+services:
+  freeradius-server:
+    container_name: freeradius-server-sql
+    restart: always
+    ports:
+      - 1812:1812/udp
+      - 1813:1813/udp
+    image: freeradius-server-sql:latest
+    environment:
+    - TZ=Asia/Taipei
+  db:
+    container_name: mariadb-radius
+    image: mariadb-radius:latest
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: mariadb1234
+    ports:
+      - 3306:3306
+  adminer:
+    container_name: adminer-mariadb
+    image: adminer:4.8.1-standalone
+    restart: always
+    ports:
+      - 8080:8080

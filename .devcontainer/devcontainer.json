@@ -1,0 +1,20 @@
+{
+	"name": "FreeRADIUS Dev",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	"remoteUser": "vscode",
+	"postCreateCommand": "./configure && make -j$(nproc)",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"mads-hartmann.bash-ide-vscode"
+			]
+		}
+	}
+}

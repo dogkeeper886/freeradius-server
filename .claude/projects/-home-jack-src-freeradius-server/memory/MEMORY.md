@@ -1,0 +1,1 @@
+- [Proxy DNS failure](project_proxy_dns_failure.md) — single FQDN resolve failure in realms_init() kills all proxy; no existing issue found

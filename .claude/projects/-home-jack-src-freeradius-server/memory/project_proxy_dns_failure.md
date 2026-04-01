@@ -34,4 +34,6 @@ When FreeRADIUS proxy uses FQDNs for home servers, DNS resolution happens at con
 - Bug reproduced in devcontainer on v3.2.x HEAD
 - v3.2.x "skip and continue" approach (fix/proxy-dns-graceful-skip) — deleted, maintainer said config errors should be fatal
 - v4 deferred DNS approach (issue-5799-defer-fqdn-resolution) — on fork, resolves FQDN at conn_init() time so failure follows zombie/revive path
-- Waiting for maintainer (alandekok) response on deferred resolution approach before opening PR
+- v4 implementation tested: build clean, e2e proxy works for both IP and FQDN, bad FQDN retries via zombie/revive
+- Code review found 3 concerns: config table duplication (~150 lines), fragile parent cast, ipv4addr/ipv6addr not deferred
+- Waiting for maintainer (alandekok) response on #5799 before opening PR — may need rework based on feedback

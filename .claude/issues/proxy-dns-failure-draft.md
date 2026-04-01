@@ -98,3 +98,36 @@ _No response_
 ### Backtrace from LLDB or GDB
 
 _No response_
+
+---
+
+## Implementation: Deferred DNS Resolution (master/v4)
+
+**Branch:** `issue-5799-defer-fqdn-resolution`
+**Files:** `src/modules/rlm_radius/{rlm_radius.c, rlm_radius.h, bio.c}`
+
+### Approach
+
+Instead of resolving FQDNs at config parse time, store the hostname and defer resolution to `conn_init()`. If DNS fails at connection time, `CONNECTION_STATE_FAILED` triggers the zombie/revive retry mechanism — same path as an unreachable IP.
+
+### Test Results (2026-04-01)
+
+- Build: clean on master
+- `make test`: pass (2 pre-existing failures unrelated: linelog mount perms, totp missing oathtool)
+- Config check with unresolvable FQDN: passes (deferred)
+- Server startup with bad FQDN: starts, retries via INIT → FAILED → CLOSED cycle
+- E2E proxy via IP literal: `Reply-Message = "proxied-ok"` from home server
+- E2E proxy via FQDN (`homeserver.test`): `Reply-Message = "proxied-ok"` — same result
+
+### Code Review Concerns
+
+1. **Config table duplication (~150 lines)** — UDP/TCP/unconnected sub-configs duplicated from `fd_config.c` with only `.func = ipaddr_deferred_parse` added to the `ipaddr` entry. If upstream changes `fd_config.c`, these copies drift. Maintainers may prefer a hook-based approach in `fd_config.c` instead.
+
+2. **Fragile parent pointer cast** — `ipaddr_deferred_parse()` casts `parent` (which is `fr_bio_fd_config_t *`) to `rlm_radius_t *`, relying on `fd_config` being at offset 0 in `rlm_radius_s`. The struct comment says "MUST be at the start!" but there's no compile-time assertion.
+
+3. **`ipv4addr`/`ipv6addr` not deferred** — Only `ipaddr` (COMBO) gets deferred parse. Explicit `ipv4addr`/`ipv6addr` still resolve at config time. Probably intentional but worth noting.
+
+### Status
+
+- Waiting for maintainer (alandekok) response on #5799 before opening PR
+- May need to rework based on feedback about the config duplication

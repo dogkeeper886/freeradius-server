@@ -13,29 +13,16 @@ Track and verify each step required by the FreeRADIUS contribution guidelines wh
 
 - `$ARGUMENTS` — the issue number being worked on
 
+### Current State
+
+- Branch: !`git branch --show-current`
+- Recent commits: !`git log --oneline -5`
+- Changes: !`git diff --stat HEAD`
+- Status: !`git status --short`
+
 ### Steps
 
-For the given issue, check the current state of the working tree, branches, commits, and tests to determine which steps are done and which remain.
-
-#### Step 1: Gather current state
-
-Run these in parallel:
-
-```bash
-git branch --show-current
-```
-
-```bash
-git log --oneline -5
-```
-
-```bash
-git diff --stat HEAD
-```
-
-```bash
-git status --short
-```
+Using the state above, check each requirement to determine which steps are done and which remain.
 
 #### Step 2: Check each requirement
 

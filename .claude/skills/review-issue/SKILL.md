@@ -2,6 +2,8 @@
 name: review-issue
 description: Review FreeRADIUS GitHub issues against the contribution guidelines before picking one up. Use when evaluating whether an issue is suitable to work on.
 argument-hint: "[issue-number or blank to scan open issues]"
+disable-model-invocation: true
+context: fork
 allowed-tools: Bash(gh *), Bash(python3 *), WebFetch, Read, Grep, Glob
 ---
 
